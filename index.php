@@ -24,8 +24,8 @@
         </div>
         <form action="" method="post" class="w3-container">
           <div class='w3-row-padding'>
-            <div class='w3-quarter'>
-              <p class='w3-large'>First Name</p>
+            <div class='w3-quarter w3-green'>
+              <p>First Name</p>
             </div>
             <div class='w3-threequarter'>
               <input class="w3-input" type="text" name="first" placeholder="John" required>
