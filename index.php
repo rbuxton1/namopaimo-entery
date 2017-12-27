@@ -23,7 +23,15 @@
           <h2>Submit a model</h2>
         </div>
         <form action="" method="post" class="w3-container">
-          <label>First Name<input class="w3-input" type="text" name="first" placeholder="John" required></label>
+          <div class='w3-row-padding'>
+            <div class='w3-quarter'>
+              <p class='w3-large'>First Name</p>
+            </div>
+            <div class='w3-threequarter'>
+              <input class="w3-input" type="text" name="first" placeholder="John" required>
+            </div>
+          </div>
+
           <label>Last Name</label><input class="w3-input" type="text" name="last" placeholder="Doe" required>
           <label>Address (This will be used if you win any prizes, optional if you dont want any)</label><input class="w3-input" type="text" name="first" placeholder="123 S Horse St" required>
           <label>Experience Level</label><select class="w3-select" name="option" required>
