@@ -26,12 +26,12 @@
           <div class='w3-row-padding'>
             <div class='w3-quarter w3-lgiht-grey'>
               <p>
-                First Name<br>
-                Last Name<br>
-                Address (This will be used if you win any prizes, optional if you dont want any)<br>
-                Experience Level<br>
-                Model Description<br>
-                Painting Plan<br>
+                First Name<br><br>
+                Last Name<br><br>
+                Address (This will be used if you win any prizes, optional if you dont want any)<br><br>
+                Experience Level<br><br>
+                Model Description<br><br>
+                Painting Plan<br><br>
               </p>
             </div>
             <div class='w3-threequarter'>
