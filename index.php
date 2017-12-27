@@ -23,16 +23,16 @@
           <h2>Submit a model</h2>
         </div>
         <form action="" method="post" class="w3-container">
-          <label>First Name</label><input class="w3-input" type="text" name="first" placeholder="John">
-          <label>Last Name</label><input class="w3-input" type="text" name="last" placeholder="Doe">
-          <label>Address (This will be used if you win any prizes, optional if you dont want any)</label><input class="w3-input" type="text" name="first" placeholder="123 S Horse St">
-          <label>Experience Level</label><select class="w3-select" name="option">
+          <label>First Name<input class="w3-input" type="text" name="first" placeholder="John" required></label>
+          <label>Last Name</label><input class="w3-input" type="text" name="last" placeholder="Doe" required>
+          <label>Address (This will be used if you win any prizes, optional if you dont want any)</label><input class="w3-input" type="text" name="first" placeholder="123 S Horse St" required>
+          <label>Experience Level</label><select class="w3-select" name="option" required>
             <option value="" disabled selected>Choose your option</option>
             <option value="1">Beginner</option>
             <option value="2">Intermediate</option>
             <option value="3">Expert</option>
           </select>
-          <label>Model Description</label><textarea name="desc" rows="2" class="w3-input" placeholder="Whats so cool about your horse?"></textarea>
+          <label>Model Description</label><textarea name="desc" rows="2" class="w3-input" placeholder="Whats so cool about your horse?" required></textarea>
           <label>Painting Plan</label><textarea name="plan" rows="2" class="w3-input" placeholder="How do you plan on doing this?"></textarea>
 
           <p> All submissions have to pay an entery fee. This fee is to be payed to $pay, and is of $ammount. By clicking submit you are awknowledging this and are aware that failure to pay that fee will result in your submission not being counted. You will also not be able to change anything about this once it is submitted so be sure that your data above is correct!</p>
