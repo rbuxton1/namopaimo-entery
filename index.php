@@ -23,28 +23,69 @@
           <h2>Submit a model</h2>
         </div>
         <form action="" method="post" class="w3-container">
-          <div class='w3-row-padding'>
+          <div class='w3-row-padding'> <!-- First name -->
             <div class='w3-quarter w3-lgiht-grey'>
               <p>
-                First Name<br><br>
-                Last Name<br><br>
-                Address (This will be used if you win any prizes, optional if you dont want any)<br><br>
-                Experience Level<br><br>
-                Model Description<br><br>
-                Painting Plan<br><br>
+                First Name
               </p>
             </div>
             <div class='w3-threequarter'>
               <input class="w3-input" type="text" name="first" placeholder="John" required>
+          </div>
+          <div class='w3-row-padding'> <!-- Last Name -->
+            <div class='w3-quarter w3-lgiht-grey'>
+              <p>
+                Last Name
+              </p>
+            </div>
+            <div class='w3-threequarter'>
               <input class="w3-input" type="text" name="last" placeholder="Doe" required>
+            </div>
+          </div>
+          <div class='w3-row-padding'> <!-- Address -->
+            <div class='w3-quarter w3-lgiht-grey'>
+              <p>
+                Address (This will be used if you win any prizes, optional if you dont want any)
+              </p>
+            </div>
+            <div class='w3-threequarter'>
               <input class="w3-input" type="text" name="first" placeholder="123 S Horse St" required>
+            </div>
+          </div>
+          <div class='w3-row-padding'> <!-- Experience Level -->
+            <div class='w3-quarter w3-lgiht-grey'>
+              <p>
+                Experience Level
+              </p>
+            </div>
+            <div class='w3-threequarter'>
               <select class="w3-select" name="option" required>
                 <option value="" disabled selected>Choose your option</option>
                 <option value="1">Beginner</option>
                 <option value="2">Intermediate</option>
                 <option value="3">Expert</option>
               </select>
+            </div>
+          </div>
+          <div class='w3-row-padding'> <!-- Model Description -->
+            <div class='w3-quarter w3-lgiht-grey'>
+              <p>
+                Model Description
+              </p>
+            </div>
+            <div class='w3-threequarter'>
+
+
               <textarea name="desc" rows="2" class="w3-input" placeholder="Whats so cool about your horse?" required></textarea>
+            </div>
+          </div>
+          <div class='w3-row-padding'> <!-- Painting plan -->
+            <div class='w3-quarter w3-lgiht-grey'>
+              <p>
+                Painting Plan
+              </p>
+            </div>
+            <div class='w3-threequarter'>
               <textarea name="plan" rows="2" class="w3-input" placeholder="How do you plan on doing this?"></textarea>
             </div>
           </div>
