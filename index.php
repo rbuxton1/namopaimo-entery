@@ -25,9 +25,7 @@
         <form action="" method="post" class="w3-container">
           <div class='w3-row-padding'> <!-- First name -->
             <div class='w3-quarter w3-light-grey'>
-              <p>
-                First Name
-              </p>
+              <p>First Name</p>
             </div>
             <div class='w3-threequarter'>
               <input class="w3-input" type="text" name="first" placeholder="John" required>
@@ -68,7 +66,7 @@
             </div>
           </div>
           <div class='w3-row-padding'> <!-- Model Description -->
-            <div class='w3-quarter w3-w3-light-grey'>
+            <div class='w3-quarter w3-light-grey'>
               <p>
                 Model Description
               </p>
