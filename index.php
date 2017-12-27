@@ -24,7 +24,7 @@
         </div>
         <form action="" method="post" class="w3-container">
           <div class='w3-row-padding'> <!-- First name -->
-            <div class='w3-quarter w3-lgiht-grey'>
+            <div class='w3-quarter w3-light-grey'>
               <p>
                 First Name
               </p>
@@ -33,7 +33,7 @@
               <input class="w3-input" type="text" name="first" placeholder="John" required>
           </div>
           <div class='w3-row-padding'> <!-- Last Name -->
-            <div class='w3-quarter w3-lgiht-grey'>
+            <div class='w3-quarter w3-light-grey'>
               <p>
                 Last Name
               </p>
@@ -43,7 +43,7 @@
             </div>
           </div>
           <div class='w3-row-padding'> <!-- Address -->
-            <div class='w3-quarter w3-lgiht-grey'>
+            <div class='w3-quarter w3-light-grey'>
               <p>
                 Address (This will be used if you win any prizes, optional if you dont want any)
               </p>
@@ -53,7 +53,7 @@
             </div>
           </div>
           <div class='w3-row-padding'> <!-- Experience Level -->
-            <div class='w3-quarter w3-lgiht-grey'>
+            <div class='w3-quarter w3-light-grey'>
               <p>
                 Experience Level
               </p>
@@ -68,7 +68,7 @@
             </div>
           </div>
           <div class='w3-row-padding'> <!-- Model Description -->
-            <div class='w3-quarter w3-lgiht-grey'>
+            <div class='w3-quarter w3-w3-light-grey'>
               <p>
                 Model Description
               </p>
@@ -80,7 +80,7 @@
             </div>
           </div>
           <div class='w3-row-padding'> <!-- Painting plan -->
-            <div class='w3-quarter w3-lgiht-grey'>
+            <div class='w3-quarter w3-light-grey'>
               <p>
                 Painting Plan
               </p>
