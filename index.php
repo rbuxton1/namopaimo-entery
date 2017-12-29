@@ -97,14 +97,24 @@
               <textarea name="desc" rows="2" class="w3-input" placeholder="Make / Mold / Scale" required></textarea>
             </div>
           </div>
-          <div class='w3-row-padding'> <!-- Painting plan -->
+          <div class='w3-row-padding'> <!-- Painting plan / medium-->
             <div class='w3-quarter'>
               <p>
-                Painting Plan
+                Mediums Used?
               </p>
             </div>
             <div class='w3-threequarter'>
-              <textarea name="plan" rows="3" class="w3-input" placeholder="Color / Medium" required></textarea>
+              <textarea name="medium" rows="3" class="w3-input" placeholder="Medium" required></textarea>
+            </div>
+          </div>
+          <div class='w3-row-padding'> <!-- Painting plan / colors -->
+            <div class='w3-quarter'>
+              <p>
+                Colors Planed to be Used?
+              </p>
+            </div>
+            <div class='w3-threequarter'>
+              <textarea name="color" rows="3" class="w3-input" placeholder="Color" required></textarea>
             </div>
           </div>
           <div class='w3-row-padding'> <!-- Goals / Challenges -->
