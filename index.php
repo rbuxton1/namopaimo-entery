@@ -28,7 +28,7 @@
               <p>First Name</p>
             </div>
             <div class='w3-threequarter'>
-              <input class="w3-input" type="text" name="first" placeholder="John" required>
+              <input class="w3-input" type="text" name="first" placeholder="Darcy" required>
           </div>
           <div class='w3-row-padding'> <!-- Last Name -->
             <div class='w3-quarter '>
@@ -37,7 +37,7 @@
               </p>
             </div>
             <div class='w3-threequarter'>
-              <input class="w3-input" type="text" name="last" placeholder="Doe" required>
+              <input class="w3-input" type="text" name="last" placeholder="Dog" required>
             </div>
           </div>
           <div class='w3-row-padding'> <!-- Email -->
@@ -127,7 +127,7 @@
               <input class="w3-check" type="checkbox" name="paid">
             </div>
           </div>
-          <label>Fee paid?<input type="submit" class="w3-btn w3-dark-gray" value="Submit" name="submit"></label>
+          <p><input type="submit" class="w3-btn w3-dark-gray" value="Submit" name="submit"><label>Fee Payed? (Check if yes)</label></p>
         </form>
     </div>
 
