@@ -123,11 +123,15 @@
                 Entry fee paid? <i>($2 entry fee, optional but very much appreciated. PayPal: NaMoPaiMo@gmail.com)</i>
               </p>
             </div>
-            <div class='w3-threequarter'>
-              <input class="w3-check" type="checkbox" name="paid">
+            <div class='w3-threequarter w3-container'>
+              <select class="w3-select" name="fee" required>
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Yes</option>
+                <option value="2">No</option>
+              </select>
             </div>
           </div>
-          <p><input type="submit" class="w3-btn w3-dark-gray" value="Submit" name="submit"><label>Fee Payed? (Check if yes)</label></p>
+          <input type="submit" class="w3-btn w3-dark-gray" value="Submit" name="submit">
         </form>
     </div>
 
