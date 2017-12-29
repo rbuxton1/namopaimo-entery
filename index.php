@@ -144,6 +144,10 @@
           </div>
           <input type="submit" class="w3-btn w3-dark-gray" value="Submit" name="submit">
         </form>
+        <?php
+          include("../../config.php");
+
+        ?>
     </div>
 
     <br>
