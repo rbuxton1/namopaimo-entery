@@ -40,6 +40,16 @@
               <input class="w3-input" type="text" name="last" placeholder="Doe" required>
             </div>
           </div>
+          <div class='w3-row-padding'> <!-- Email -->
+            <div class='w3-quarter '>
+              <p>
+                Email
+              </p>
+            </div>
+            <div class='w3-threequarter'>
+              <input class="w3-input" type="text" name="email" placeholder="darcy@dog.com" required>
+            </div>
+          </div>
           <div class='w3-row-padding'> <!-- Address Line 1-->
             <div class='w3-quarter'>
               <p>
@@ -117,7 +127,7 @@
               <input class="w3-check" type="checkbox" name="paid">
             </div>
           </div>
-          <label>Fee paid?</label><input type="submit" class="w3-btn w3-dark-gray" value="Submit" name="submit">
+          <label>Fee paid?<input type="submit" class="w3-btn w3-dark-gray" value="Submit" name="submit"></label>
         </form>
     </div>
 
