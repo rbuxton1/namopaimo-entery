@@ -117,6 +117,7 @@
               <textarea name="data" rows="3" class="w3-input" placeholder="(Optional)"></textarea>
             </div>
           </div>
+          <br>
           <div class='w3-row-padding'> <!-- entry fee payed?-->
             <div class='w3-quarter'>
               <p>
