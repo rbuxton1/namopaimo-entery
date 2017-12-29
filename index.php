@@ -28,7 +28,7 @@
               <p>First Name</p>
             </div>
             <div class='w3-threequarter'>
-              <input class="w3-input" type="text" name="first" placeholder="Darcy" required>
+              <input class="w3-input" type="text" name="first" placeholder="Darcy" maxlength="20" required>
           </div>
           <div class='w3-row-padding'> <!-- Last Name -->
             <div class='w3-quarter '>
@@ -37,7 +37,7 @@
               </p>
             </div>
             <div class='w3-threequarter'>
-              <input class="w3-input" type="text" name="last" placeholder="Dog" required>
+              <input class="w3-input" type="text" name="last" placeholder="Dog" maxlength="25" required>
             </div>
           </div>
           <div class='w3-row-padding'> <!-- Email -->
@@ -47,7 +47,7 @@
               </p>
             </div>
             <div class='w3-threequarter'>
-              <input class="w3-input" type="text" name="email" placeholder="darcy@dog.com" required>
+              <input class="w3-input" type="text" name="email" placeholder="darcy@dog.com" maxlength="100" required>
             </div>
           </div>
           <div class='w3-row-padding'> <!-- Address Line 1-->
@@ -57,7 +57,7 @@
               </p>
             </div>
             <div class='w3-threequarter'>
-              <input class="w3-input" type="text" name="address" placeholder="123 S Horse St">
+              <input class="w3-input" type="text" name="address" placeholder="123 S Horse St" maxlength="300">
             </div>
           </div>
           <div class='w3-row-padding'> <!-- Address Line 2 (Country)-->
@@ -67,7 +67,7 @@
               </p>
             </div>
             <div class='w3-threequarter'>
-              <input class="w3-input" type="text" name="country" placeholder="USA" required>
+              <input class="w3-input" type="text" name="country" placeholder="USA" maxlength="50" required>
             </div>
           </div>
           <div class='w3-row-padding'> <!-- Experience Level -->
@@ -94,7 +94,7 @@
               </p>
             </div>
             <div class='w3-threequarter'>
-              <textarea name="desc" rows="2" class="w3-input" placeholder="Make / Mold / Scale" required></textarea>
+              <textarea name="desc" rows="2" class="w3-input" placeholder="Make / Mold / Scale" maxlength="250" required></textarea>
             </div>
           </div>
           <div class='w3-row-padding'> <!-- Painting plan / medium-->
@@ -104,7 +104,7 @@
               </p>
             </div>
             <div class='w3-threequarter'>
-              <textarea name="medium" rows="3" class="w3-input" placeholder="Medium" required></textarea>
+              <textarea name="medium" rows="3" class="w3-input" placeholder="Medium" maxlength="250" required></textarea>
             </div>
           </div>
           <div class='w3-row-padding'> <!-- Painting plan / colors -->
@@ -114,7 +114,7 @@
               </p>
             </div>
             <div class='w3-threequarter'>
-              <textarea name="color" rows="3" class="w3-input" placeholder="Color" required></textarea>
+              <textarea name="color" rows="3" class="w3-input" placeholder="Color" maxlength="50" required></textarea>
             </div>
           </div>
           <div class='w3-row-padding'> <!-- Goals / Challenges -->
@@ -124,7 +124,7 @@
               </p>
             </div>
             <div class='w3-threequarter'>
-              <textarea name="data" rows="3" class="w3-input" placeholder="(Optional)"></textarea>
+              <textarea name="data" rows="3" class="w3-input" placeholder="(Optional)" maxlength="500"></textarea>
             </div>
           </div>
           <br>
