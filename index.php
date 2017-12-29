@@ -94,7 +94,7 @@
               </p>
             </div>
             <div class='w3-threequarter'>
-              <textarea name="plan" rows="3" class="w3-input" placeholder="Color / Medium"></textarea>
+              <textarea name="plan" rows="3" class="w3-input" placeholder="Color / Medium" required></textarea>
             </div>
           </div>
           <div class='w3-row-padding'> <!-- Goals / Challenges -->
@@ -104,7 +104,7 @@
               </p>
             </div>
             <div class='w3-threequarter'>
-              <textarea name="data" rows="3" class="w3-input" placeholder="(optional)"></textarea>
+              <textarea name="data" rows="3" class="w3-input" placeholder="(Optional)"></textarea>
             </div>
           </div>
           <div class='w3-row-padding'> <!-- entry fee payed?-->
@@ -117,8 +117,7 @@
               <input class="w3-check" type="checkbox" name="paid">
             </div>
           </div>
-
-          <input type="submit" class="w3-btn w3-dark-gray" value="Submit" name="submit">
+          <label>Fee paid?</label><input type="submit" class="w3-btn w3-dark-gray" value="Submit" name="submit">
         </form>
     </div>
 
