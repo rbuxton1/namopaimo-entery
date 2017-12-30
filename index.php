@@ -79,11 +79,11 @@
             <div class='w3-threequarter'>
               <select class="w3-select" name="level" required>
                 <option value="" disabled selected>Choose your option</option>
-                <option value="1">First Time Painter</option>
-                <option value="2">Beginner</option>
-                <option value="3">Intermediate</option>
-                <option value="4">Advanced Amatuer</option>
-                <option value="5">Professional</option>
+                <option value="First Time Painter">First Time Painter</option>
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced Amatuer">Advanced Amatuer</option>
+                <option value="Professional">Professional</option>
               </select>
             </div>
           </div>
@@ -137,8 +137,8 @@
             <div class='w3-threequarter w3-container'>
               <select class="w3-select" name="fee" required>
                 <option value="" disabled selected>Choose your option</option>
-                <option value="1">Yes</option>
-                <option value="2">No</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
               </select>
             </div>
           </div>
@@ -147,6 +147,23 @@
         <?php
           include("../../config.php");
 
+          if($_SERVER["REQUEST_METHOD"] == "POST") {
+            $first = mysqli_real_escape_string($db, $_POST['first']);
+            $last = mysqli_real_escape_string($db, $_POST['last']);
+            $email = mysqli_real_escape_string($db, $_POST['email']);
+            $address = mysqli_real_escape_string($db, $_POST['address']);
+            $country = mysqli_real_escape_string($db, $_POST['country']);
+            $level = mysqli_real_escape_string($db, $_POST['level']);
+            $desc = mysqli_real_escape_string($db, $_POST['desc']);
+            $medium = mysqli_real_escape_string($db, $_POST['medium']);
+            $color = mysqli_real_escape_string($db, $_POST['color']);
+            $data = mysqli_real_escape_string($db, $_POST['data']);
+            $fee = mysqli_real_escape_string($db, $_POST['fee']);
+
+            $stmt = "INSERT INTO `user`(`id`, `first`, `last`, `email`, `address`, `country`, `level`, `desc`, `mediums`, `color`, `extra`, `paid`) VALUES (NULL, '$first', '$last', '$email', '$address', '$country', '$level', '$desc', '$medium', '$color', '$data', '$fee')";
+            file_put_contents("test.txt", $stmt);
+
+          }
         ?>
     </div>
 
