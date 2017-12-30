@@ -161,8 +161,7 @@
             $fee = mysqli_real_escape_string($db, $_POST['fee']);
 
             $stmt = "INSERT INTO `user`(`id`, `first`, `last`, `email`, `address`, `country`, `level`, `desc`, `mediums`, `color`, `extra`, `paid`) VALUES (NULL, '$first', '$last', '$email', '$address', '$country', '$level', '$desc', '$medium', '$color', '$data', '$fee')";
-            file_put_contents("test.txt", $stmt);
-
+            $result = mysqli_query($db,$stmt);
           }
         ?>
     </div>
