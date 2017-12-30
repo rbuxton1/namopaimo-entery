@@ -147,7 +147,7 @@
         <?php
           include("../../config.php");
 
-          if($_SERVER["REQUEST_METHOD"] == "POST") {
+          if(isset($_POST["submit"])) {
             $first = mysqli_real_escape_string($db, $_POST['first']);
             $last = mysqli_real_escape_string($db, $_POST['last']);
             $email = mysqli_real_escape_string($db, $_POST['email']);
