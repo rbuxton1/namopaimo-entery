@@ -82,7 +82,7 @@
                 <option value="First Time Painter">First Time Painter</option>
                 <option value="Beginner">Beginner</option>
                 <option value="Intermediate">Intermediate</option>
-                <option value="Advanced Amatuer">Advanced Amatuer</option>
+                <option value="Advanced Amateur">Advanced Amateur</option>
                 <option value="Professional">Professional</option>
               </select>
             </div>
@@ -162,6 +162,19 @@
 
             $stmt = "INSERT INTO `user`(`id`, `first`, `last`, `email`, `address`, `country`, `level`, `desc`, `mediums`, `color`, `extra`, `paid`) VALUES (NULL, '$first', '$last', '$email', '$address', '$country', '$level', '$desc', '$medium', '$color', '$data', '$fee')";
             $result = mysqli_query($db,$stmt);
+
+            unset($_POST['first']);
+            unset($_POST['last']);
+            unset($_POST['email']);
+            unset($_POST['address']);
+            unset($_POST['country']);
+            unset($_POST['level']);
+            unset($_POST['desc']);
+            unset($_POST['medium']);
+            unset($_POST['color']);
+            unset($_POST['data']);
+            unset($_POST['fee']);
+            unset($_POST['submit']);
           }
         ?>
     </div>
