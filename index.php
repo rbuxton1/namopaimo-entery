@@ -177,6 +177,8 @@
             unset($_POST['submit']);
             unset($_POST);
             $_POST = array();
+
+            header("Location: complete.php");
           }
         ?>
     </div>
