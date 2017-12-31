@@ -175,6 +175,7 @@
             unset($_POST['data']);
             unset($_POST['fee']);
             unset($_POST['submit']);
+            unset($_POST);
           }
         ?>
     </div>
@@ -184,7 +185,10 @@
     <!-- Footer -->
     <footer class="w3-container w3-theme-dark w3-padding-16">
       <h3>NaMoPaiMo</h3>
-      <p>Ryan Buxton 2017</p>
+      <p>
+        Ryan Buxton 2017<br>
+        <i><a href="http://www.github.com/rbuxton1/namopaimo-entry">Heres how it works</a></i>
+      </p>
       <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
         <span class="w3-text w3-theme-light w3-padding">Go To Top</span> 
         <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
