@@ -176,6 +176,7 @@
             unset($_POST['fee']);
             unset($_POST['submit']);
             unset($_POST);
+            $_POST = array();
           }
         ?>
     </div>
