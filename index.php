@@ -57,7 +57,11 @@
               </p>
             </div>
             <div class='w3-threequarter'>
-              <input class="w3-input" type="text" name="address" placeholder="123 S Horse St" maxlength="300">
+              <input class="w3-input" type="text" name="address" placeholder="123 S Horse St" maxlength="200">
+              <input class="w3-input" type="text" name="address2" placeholder="Apt. Number 23" maxlength="30">
+              <input class="w3-input" type="text" name="city" placeholder="Horseville" maxlength="30">
+              <input class="w3-input" type="text" name="state" placeholder="Colorado" maxlength="30">
+              <input class="w3-input" type="text" name="zip" placeholder="80013" maxlength="10">
             </div>
           </div>
           <div class='w3-row-padding'> <!-- Address Line 2 (Country)-->
@@ -151,7 +155,7 @@
             $first = mysqli_real_escape_string($db, $_POST['first']);
             $last = mysqli_real_escape_string($db, $_POST['last']);
             $email = mysqli_real_escape_string($db, $_POST['email']);
-            $address = mysqli_real_escape_string($db, $_POST['address']);
+            $address = mysqli_real_escape_string($db, $_POST['address']) . ", " . mysqli_real_escape_string($db, $_POST['address2']) . ", " .mysqli_real_escape_string($db, $_POST['city']) . ", " .mysqli_real_escape_string($db, $_POST['state']) . ", " . mysqli_real_escape_string($db, $_POST['zip']);
             $country = mysqli_real_escape_string($db, $_POST['country']);
             $level = mysqli_real_escape_string($db, $_POST['level']);
             $desc = mysqli_real_escape_string($db, $_POST['desc']);
@@ -162,21 +166,6 @@
 
             $stmt = "INSERT INTO `user`(`id`, `first`, `last`, `email`, `address`, `country`, `level`, `desc`, `mediums`, `color`, `extra`, `paid`) VALUES (NULL, '$first', '$last', '$email', '$address', '$country', '$level', '$desc', '$medium', '$color', '$data', '$fee')";
             $result = mysqli_query($db,$stmt);
-
-            unset($_POST['first']);
-            unset($_POST['last']);
-            unset($_POST['email']);
-            unset($_POST['address']);
-            unset($_POST['country']);
-            unset($_POST['level']);
-            unset($_POST['desc']);
-            unset($_POST['medium']);
-            unset($_POST['color']);
-            unset($_POST['data']);
-            unset($_POST['fee']);
-            unset($_POST['submit']);
-            unset($_POST);
-            $_POST = array();
 
             header("location: complete.php");
           }
