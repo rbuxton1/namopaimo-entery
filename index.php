@@ -57,11 +57,11 @@
               </p>
             </div>
             <div class='w3-threequarter'>
-              <input class="w3-input" type="text" name="address" placeholder="123 S Horse St" maxlength="200">
-              <input class="w3-input" type="text" name="address2" placeholder="Apt. Number 23" maxlength="30">
-              <input class="w3-input" type="text" name="city" placeholder="Horseville" maxlength="30">
-              <input class="w3-input" type="text" name="state" placeholder="Colorado" maxlength="30">
-              <input class="w3-input" type="text" name="zip" placeholder="80013" maxlength="10">
+              <input class="w3-input" type="text" name="address" placeholder="Address Line 1" maxlength="200">
+              <input class="w3-input" type="text" name="address2" placeholder="Address Line 2" maxlength="30">
+              <input class="w3-input" type="text" name="city" placeholder="City" maxlength="30">
+              <input class="w3-input" type="text" name="state" placeholder="State" maxlength="30">
+              <input class="w3-input" type="text" name="zip" placeholder="ZIP code" maxlength="10">
             </div>
           </div>
           <div class='w3-row-padding'> <!-- Address Line 2 (Country)-->
