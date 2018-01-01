@@ -167,7 +167,9 @@
             $stmt = "INSERT INTO `user`(`id`, `first`, `last`, `email`, `address`, `country`, `level`, `desc`, `mediums`, `color`, `extra`, `paid`) VALUES (NULL, '$first', '$last', '$email', '$address', '$country', '$level', '$desc', '$medium', '$color', '$data', '$fee')";
             $result = mysqli_query($db,$stmt);
 
-            header("location: complete.php");
+            if($result){
+              header("location:complete.php");
+            }
           }
         ?>
     </div>
