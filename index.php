@@ -168,7 +168,17 @@
             $result = mysqli_query($db,$stmt);
 
             if($result){
-              header("location:complete.php");
+              echo "
+                <br>
+                <div class='w3-card-4'>
+                  <div class='w3-container w3-green'>
+                    <h2>Registration complete!</h2>
+                  </div>
+                  <p>
+                    Good luck!
+                  </p>
+                </div>
+                ";
             }
           }
         ?>
