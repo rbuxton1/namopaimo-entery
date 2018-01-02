@@ -148,42 +148,44 @@
           </div>
           <input type="submit" class="w3-btn w3-dark-gray" value="Submit" name="submit">
         </form>
-        <?php
-          include("../../config.php");
+      </div>
+      <br>
 
-          if(isset($_POST["submit"])) {
-            $first = mysqli_real_escape_string($db, $_POST['first']);
-            $last = mysqli_real_escape_string($db, $_POST['last']);
-            $email = mysqli_real_escape_string($db, $_POST['email']);
-            $address = mysqli_real_escape_string($db, $_POST['address']) . ", " . mysqli_real_escape_string($db, $_POST['address2']) . ", " .mysqli_real_escape_string($db, $_POST['city']) . ", " .mysqli_real_escape_string($db, $_POST['state']) . ", " . mysqli_real_escape_string($db, $_POST['zip']);
-            $country = mysqli_real_escape_string($db, $_POST['country']);
-            $level = mysqli_real_escape_string($db, $_POST['level']);
-            $desc = mysqli_real_escape_string($db, $_POST['desc']);
-            $medium = mysqli_real_escape_string($db, $_POST['medium']);
-            $color = mysqli_real_escape_string($db, $_POST['color']);
-            $data = mysqli_real_escape_string($db, $_POST['data']);
-            $fee = mysqli_real_escape_string($db, $_POST['fee']);
+      <?php
+        include("../../config.php");
 
-            $stmt = "INSERT INTO `user`(`id`, `first`, `last`, `email`, `address`, `country`, `level`, `desc`, `mediums`, `color`, `extra`, `paid`) VALUES (NULL, '$first', '$last', '$email', '$address', '$country', '$level', '$desc', '$medium', '$color', '$data', '$fee')";
-            $result = mysqli_query($db,$stmt);
+        if(isset($_POST["submit"])) {
+          $first = mysqli_real_escape_string($db, $_POST['first']);
+          $last = mysqli_real_escape_string($db, $_POST['last']);
+          $email = mysqli_real_escape_string($db, $_POST['email']);
+          $address = mysqli_real_escape_string($db, $_POST['address']) . ", " . mysqli_real_escape_string($db, $_POST['address2']) . ", " .mysqli_real_escape_string($db, $_POST['city']) . ", " .mysqli_real_escape_string($db, $_POST['state']) . ", " . mysqli_real_escape_string($db, $_POST['zip']);
+          $country = mysqli_real_escape_string($db, $_POST['country']);
+          $level = mysqli_real_escape_string($db, $_POST['level']);
+          $desc = mysqli_real_escape_string($db, $_POST['desc']);
+          $medium = mysqli_real_escape_string($db, $_POST['medium']);
+          $color = mysqli_real_escape_string($db, $_POST['color']);
+          $data = mysqli_real_escape_string($db, $_POST['data']);
+          $fee = mysqli_real_escape_string($db, $_POST['fee']);
 
-            if($result){
-              echo "
-                <br>
-                <div class='w3-card-4'>
-                  <div class='w3-container w3-green'>
-                    <h2>Registration complete!</h2>
-                  </div>
-                  <p>
-                    Good luck!
-                  </p>
+          $stmt = "INSERT INTO `user`(`id`, `first`, `last`, `email`, `address`, `country`, `level`, `desc`, `mediums`, `color`, `extra`, `paid`) VALUES (NULL, '$first', '$last', '$email', '$address', '$country', '$level', '$desc', '$medium', '$color', '$data', '$fee')";
+          $result = mysqli_query($db,$stmt);
+
+          if($result){
+            echo "
+              <br>
+              <div class='w3-card-4'>
+                <div class='w3-container w3-green'>
+                  <h2>Registration complete!</h2>
                 </div>
-                ";
-            }
+                <p>
+                  Good luck!
+                </p>
+              </div>
+              ";
           }
-        ?>
+        }
+      ?>
     </div>
-
     <br>
 
     <!-- Footer -->
