@@ -16,6 +16,14 @@
 
   <br>
 
+  <!-- Big message -->
+  <div class="w3-container w3-card w3-center">
+    <div class="w3-red w3-xxlarge"> Registration is closed! </div>
+    <div class="w3-container w3-large">
+      Many thanks to all the people who signed up this year, and good luck! More statistics about the event will be available here soon.
+    </div>
+  </div>
+
   <!-- Body -->
   <div class="w3-center">
     <div class="w3-card-4">
@@ -146,7 +154,7 @@
               </select>
             </div>
           </div>
-          <input type="submit" class="w3-btn w3-dark-gray" value="Submit" name="submit">
+          <input type="submit" class="w3-btn w3-dark-gray" value="Submit" name="submit" disabled>
         </form>
       </div>
     </div>
@@ -168,7 +176,8 @@
       $fee = mysqli_real_escape_string($db, $_POST['fee']);
 
       $stmt = "INSERT INTO `user`(`id`, `first`, `last`, `email`, `address`, `country`, `level`, `desc`, `mediums`, `color`, `extra`, `paid`) VALUES (NULL, '$first', '$last', '$email', '$address', '$country', '$level', '$desc', '$medium', '$color', '$data', '$fee')";
-      $result = mysqli_query($db,$stmt);
+      //Uncomment to make run again! Also remove the disabled option in the button
+      //$result = mysqli_query($db,$stmt);
 
       if($result){
         echo "
