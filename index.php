@@ -23,6 +23,8 @@
       Many thanks to all the people who signed up this year, and good luck! More statistics about the event will be available here soon.
     </div>
   </div>
+  <br>
+  <br>
 
   <!-- Body -->
   <div class="w3-center">
