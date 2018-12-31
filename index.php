@@ -193,7 +193,8 @@
 
         unset($_POST['submit']);
 
-        header("location: complete.php");
+        header('location: complete.php');
+        exit();
       }
   }
   ?>
