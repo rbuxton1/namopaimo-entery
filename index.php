@@ -16,21 +16,14 @@
 
   <br>
 
-  <!-- Big message -->
-  <div class="w3-container w3-card w3-center">
-    <div class="w3-red w3-xxlarge"> Registration is closed! </div>
-    <div class="w3-container w3-large">
-      Many thanks to all the people who signed up this year, and good luck! More statistics about the event will be available here soon.
-    </div>
-  </div>
-  <br>
-  <br>
+  <!-- Big message, see git -->
+
 
   <!-- Body -->
   <div class="w3-center">
     <div class="w3-card-4">
       <div class="w3-container w3-green">
-        <h2>2018 Registration</h2>
+        <h2>2019 Registration</h2>
       </div>
       <form action="" method="post" class="w3-container">
         <div class='w3-row-padding'> <!-- First name -->
@@ -63,7 +56,7 @@
           <div class='w3-row-padding'> <!-- Address Line 1-->
             <div class='w3-quarter'>
               <p>
-                Address
+                Address <br>(English/Latin characters only)
               </p>
             </div>
             <div class='w3-threequarter'>
@@ -101,6 +94,20 @@
               </select>
             </div>
           </div>
+          <div class='w3-row-padding'> <!-- youth shower?-->
+            <div class='w3-quarter'>
+              <p>
+                Youth entry? <i>(14 and under)</i>
+              </p>
+            </div>
+            <div class='w3-threequarter w3-container'>
+              <select class="w3-select" name="youth" required>
+                <option value="" disabled selected>Choose your option</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+          </div>
           <div class='w3-row-padding'> <!-- Model Description -->
             <div class='w3-quarter'>
               <p>
@@ -114,17 +121,17 @@
           <div class='w3-row-padding'> <!-- Painting plan / medium-->
             <div class='w3-quarter'>
               <p>
-                Mediums Used?
+                Media
               </p>
             </div>
             <div class='w3-threequarter'>
-              <textarea name="medium" rows="3" class="w3-input" placeholder="Medium" maxlength="250" required></textarea>
+              <textarea name="medium" rows="3" class="w3-input" placeholder="Oils, acrylics, pastels, etc." maxlength="250" required></textarea>
             </div>
           </div>
           <div class='w3-row-padding'> <!-- Painting plan / colors -->
             <div class='w3-quarter'>
               <p>
-                Colors Planed to be Used?
+                Color
               </p>
             </div>
             <div class='w3-threequarter'>
@@ -156,7 +163,7 @@
               </select>
             </div>
           </div>
-          <input type="submit" class="w3-btn w3-dark-gray" value="Submit" name="submit" disabled>
+          <input type="submit" class="w3-btn w3-dark-gray" value="Submit" name="submit">
         </form>
       </div>
     </div>
@@ -171,15 +178,16 @@
       $address = mysqli_real_escape_string($db, $_POST['address']) . ", " . mysqli_real_escape_string($db, $_POST['address2']) . ", " .mysqli_real_escape_string($db, $_POST['city']) . ", " .mysqli_real_escape_string($db, $_POST['state']) . ", " . mysqli_real_escape_string($db, $_POST['zip']);
       $country = mysqli_real_escape_string($db, $_POST['country']);
       $level = mysqli_real_escape_string($db, $_POST['level']);
+      $youth = mysqli_real_escape_string($db, $_POST['youth']);
       $desc = mysqli_real_escape_string($db, $_POST['desc']);
       $medium = mysqli_real_escape_string($db, $_POST['medium']);
       $color = mysqli_real_escape_string($db, $_POST['color']);
       $data = mysqli_real_escape_string($db, $_POST['data']);
       $fee = mysqli_real_escape_string($db, $_POST['fee']);
 
-      $stmt = "INSERT INTO `user`(`id`, `first`, `last`, `email`, `address`, `country`, `level`, `desc`, `mediums`, `color`, `extra`, `paid`) VALUES (NULL, '$first', '$last', '$email', '$address', '$country', '$level', '$desc', '$medium', '$color', '$data', '$fee')";
+      $stmt = "INSERT INTO `user`(`id`, `first`, `last`, `email`, `address`, `country`, `level`, `youth`, `desc`, `mediums`, `color`, `extra`, `paid`) VALUES (NULL, '$first', '$last', '$email', '$address', '$country', '$level', '$youth', '$desc', '$medium', '$color', '$data', '$fee')";
       //Uncomment to make run again! Also remove the disabled option in the button
-      //$result = mysqli_query($db,$stmt);
+      $result = mysqli_query($db,$stmt);
 
       if($result){
         echo "
