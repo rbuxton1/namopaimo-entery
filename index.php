@@ -190,9 +190,9 @@
       $result = mysqli_query($db,$stmt);
 
       if($result){
-        header("Location:complete.php");
-      unset($_POST['submit']);
-    }
+        header("location: complete.php");
+        unset($_POST['submit']);
+      }
   }
   ?>
   <br>
