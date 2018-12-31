@@ -190,17 +190,7 @@
       $result = mysqli_query($db,$stmt);
 
       if($result){
-        echo "
-        <br>
-        <div class='w3-card-4 w3-center'>
-          <div class='w3-container w3-green'>
-            <h2>Registration complete!</h2>
-          </div>
-          <p>
-            Good luck!
-          </p>
-        </div>
-      ";
+        header("Location:complete.php");
       unset($_POST['submit']);
     }
   }
