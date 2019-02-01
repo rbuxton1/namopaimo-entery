@@ -35,7 +35,7 @@
 
       $stmt = "INSERT INTO `user`(`id`, `first`, `last`, `email`, `address`, `country`, `level`, `youth`, `desc`, `mediums`, `color`, `extra`, `paid`) VALUES (NULL, '$first', '$last', '$email', '$address', '$country', '$level', '$youth', '$desc', '$medium', '$color', '$data', '$fee')";
       //Uncomment to make run again! Also remove the disabled option in the button
-      $result = mysqli_query($db,$stmt);
+      //$result = mysqli_query($db,$stmt);
 
       if($result){
 
@@ -49,7 +49,12 @@
 
 
   <!-- Big message, see git -->
-
+  <div class="w3-container w3-card w3-center">
+    <div class="w3-red w3-xxlarge"> Registration is closed! </div>
+    <div class="w3-container w3-large">
+      Many thanks to all the people who signed up this year, and good luck! More statistics about the event will be available here soon.
+    </div>
+  </div>
 
   <!-- Body -->
   <div class="w3-center">
@@ -195,7 +200,7 @@
               </select>
             </div>
           </div>
-          <input type="submit" class="w3-btn w3-dark-gray" value="Submit" name="submit">
+          <input type="submit" class="w3-btn w3-dark-gray" value="Submit" name="submit" disabled>
         </form>
       </div>
     </div>
