@@ -1,1 +1,1 @@
-# namopaimo-entery
+# namopaimo-entry
